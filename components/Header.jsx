@@ -26,6 +26,7 @@ import {
   RocketLaunchIcon,
   Bars2Icon,
 } from "@heroicons/react/24/solid";
+import { Collapse } from "@material-tailwind/react";
 
 
 
@@ -271,9 +272,9 @@ const Header = () => {
         </Button>
         <ProfileMenu />
       </div>
-      <MobileNav open={isNavOpen} className="overflow-scroll">
-        <NavList />
-      </MobileNav>
+     <Collapse open={isNavOpen} className="overflow-scroll">
+  <NavList />
+</Collapse>
     </Navbar>
     </>
   )
