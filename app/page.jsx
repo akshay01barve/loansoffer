@@ -1,21 +1,19 @@
-'use client';
-import React from 'react'
-import Header from "../components/Header"
-import Carousels from "../components/Carousels"
-import Footer from "../components/Footer"
-import OurPartners from "../components/OurPartners"
+"use client";
+import React from "react";
+import Header from "../components/Header";
 
 
 const HOME = () => {
   return (
     <>
-   <Header/>
-   <Carousels/>
-   <OurPartners/>
-   <Footer/>
-
+      <div >
+        <div >
+          <Header />
+        </div>
+        
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default HOME
+export default HOME;

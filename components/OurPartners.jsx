@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import {
   Tabs,
   TabsHeader,
@@ -7,10 +6,12 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
+ 
+import React from 'react'
 
 const OurPartners = () => {
   const data = [
-    {
+     {
       label: "All",
       value: "All",
       images: [
@@ -136,8 +137,8 @@ const OurPartners = () => {
       ],
     },
     {
-      label: "Unsecured Loans",
-      value: "unsecured-loans",
+      label: "React",
+      value: "react",
       images: [
         {
           imageLink:
@@ -166,8 +167,8 @@ const OurPartners = () => {
       ],
     },
     {
-      label: "Credit Card",
-      value: "credit-card",
+      label: "Vue",
+      value: "vue",
       images: [
         {
           imageLink:
@@ -196,8 +197,8 @@ const OurPartners = () => {
       ],
     },
     {
-      label: "Home Loans",
-      value: "home-loans",
+      label: "Angular",
+      value: "angular",
       images: [
         {
           imageLink:
@@ -226,8 +227,8 @@ const OurPartners = () => {
       ],
     },
     {
-      label: "Credit Bureau",
-      value: "credit-bureau",
+      label: "Svelte",
+      value: "svelte",
       images: [
         {
           imageLink:
@@ -256,43 +257,56 @@ const OurPartners = () => {
       ],
     },
   ];
-
+ 
   return (
-    <div>
-      {" "}
-      <Tabs value="html">
-        <TabsHeader>
-          {data.map(({ label, value }) => (
-            <Tab key={value} value={value}>
-              {label}
-            </Tab>
-          ))}
-        </TabsHeader>
-        <TabsBody className="grid grid-cols-1 gap-4 ">
-          {data.map(({ value, images }) => (
-            <TabPanel
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 p-4"
-              key={value}
-              value={value}
-            >
-              {images?.map(({ imageLink }, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-xl shadow-md overflow-hidden flex items-center justify-center p-2"
-                >
-                  <img
-                    className="h-12 w-full object-contain"
-                    src={imageLink}
-                    alt={`image-${index}`}
-                  />
-                </div>
-              ))}
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
-    </div>
+    <Tabs value="html">
+      <TabsHeader>
+        {data.map(({ label, value }) => (
+          <Tab key={value} value={value}>
+            {label}
+          </Tab>
+        ))}
+      </TabsHeader>
+      <TabsBody className="grid grid-cols-1 gap-4 ">
+        {data.map(({ value, images }) => (
+          <TabPanel
+            className="grid grid-cols-2 gap-4 md:grid-cols-3"
+            key={value}
+            value={value}
+          >
+            {images?.map(({ imageLink }, index) => (
+              <div key={index}>
+                <img
+                  className="h-40 w-full max-w-full rounded-lg object-cover object-center"
+                  src={imageLink}
+                  alt="image-photo"
+                />
+              </div>
+            ))}
+          </TabPanel>
+        ))}
+      </TabsBody>
+    </Tabs>
   );
-};
+}
 
-export default OurPartners;
+export default OurPartners
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
