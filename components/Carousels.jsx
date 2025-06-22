@@ -5,7 +5,7 @@ import { Carousel } from "@material-tailwind/react";
 const Carousels = () => {
   const images = [
     "./banner1.png",
-    "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=2940&q=80",
+    "./banner2.png",
     "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&w=2762&q=80"
   ];
 
@@ -32,7 +32,7 @@ const Carousels = () => {
           key={index}
           src={src}
           alt={`image ${index + 1}`}
-          className="h-[250px] w-full"
+          className="h-[320px] w-full"
         />
       ))}
     </Carousel>

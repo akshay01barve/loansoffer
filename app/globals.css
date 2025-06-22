@@ -10,3 +10,9 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+#navbar {
+  background: linear-gradient(to right, #0053d0);
+  /* from-cyan-700 (#0e7490), via-blue-500 (#3b82f6), to-indigo-600 (#4f46e5) */
+  color: white; /* Optional: for better text visibility */
+}
+

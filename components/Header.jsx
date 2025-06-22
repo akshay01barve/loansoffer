@@ -92,7 +92,7 @@ function NavListMenu() {
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+          <div className="flex items-center justify-center rounded-lg  p-2 text-white md:text-base md:font-semibold ">
             {React.createElement(icon, {
               strokeWidth: 2,
               className: "h-6 text-gray-900 w-6",
@@ -130,7 +130,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-white md:text-base md:font-semibold"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -173,7 +173,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white md:text-base md:font-semibold">Home</ListItem>
       </Typography>
       <NavListMenu />
       <Typography
@@ -183,7 +183,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white md:text-base md:font-semibold">
           Contact Us
         </ListItem>
       </Typography>
@@ -203,13 +203,13 @@ const Header = () => {
 
   return (
   <div>
-      <Navbar className="sticky top-0 z-10 mx-auto max-w-screen-xl px-4 py-2  shadow-md bg-[1b1dc7]" >
-      <div className="flex items-center justify-between text-blue-gray-900">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 " id="navbar" >
+      <div className="flex items-center justify-between text-white">
         <Typography
           as="a"
           href="#"
           variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 font-bold text-4xl"
         >
           Loan Offer
         </Typography>
@@ -218,7 +218,7 @@ const Header = () => {
         </div>
         <IconButton
           variant="text"
-          color="blue-gray"
+          color="white"
           className="lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >
