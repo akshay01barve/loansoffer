@@ -34,6 +34,7 @@ import Carousels from "./Carousels";
 import Footer from "./Footer";
 import OurPartners from "./OurPartners";
 import Product from "./Product";
+import CustomerTestimonals from "./CustomerTestimonals";
 
 const navListMenuItems = [
   {
@@ -239,6 +240,7 @@ const Header = () => {
         <Carousels />
         <Product />
         {/* <OurPartners /> */}
+        <CustomerTestimonals/>
         <Footer />  
        </div>
       
