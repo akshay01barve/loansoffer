@@ -57,9 +57,10 @@ const CompanyList = () => {
 
   return (
     <div>
-      <div className="flex flex-row justify-between">
-       <div className="md:p-3">
-         <div>
+     <div className="p-9">
+       <div className="flex flex-row gap-3">
+      
+         <div className="basis-2/3">
 
           <Accordion
             open={open === 1} icon={<Icon id={1} open={open} />}
@@ -99,7 +100,7 @@ const CompanyList = () => {
                 width="100%"
                 height="600px"
                  src="/files/ICII_COM.pdf"
-                title="GeeksforGeeks"
+                title="ICICI Bank"
               ></iframe>
             </AccordionBody>
           </Accordion>
@@ -260,10 +261,12 @@ const CompanyList = () => {
               INCRED FINANCE
             </AccordionHeader>
             <AccordionBody className="pt-0 text-base font-normal">
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+               <iframe
+                width="100%"
+                height="600px"
+                 src="/files/INCRED.pdf"
+                title="ICICI Bank"
+              ></iframe>
             </AccordionBody>
           </Accordion>
 
@@ -300,10 +303,12 @@ const CompanyList = () => {
               FINNABLE FINANCE
             </AccordionHeader>
             <AccordionBody className="pt-0 text-base font-normal">
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              <iframe
+                width="100%"
+                height="600px"
+                 src="/files/FINABLE.pdf"
+                title="FINNABLE Finance"
+              ></iframe>
             </AccordionBody>
           </Accordion>
 
@@ -321,10 +326,12 @@ const CompanyList = () => {
               FIBE FINANCE
             </AccordionHeader>
             <AccordionBody className="pt-0 text-base font-normal">
-              We&apos;re not always in the position that we want to be at.
-              We&apos;re constantly growing. We&apos;re constantly making
-              mistakes. We&apos;re constantly trying to express ourselves and
-              actualize our dreams.
+              <iframe
+                width="100%"
+                height="600px"
+                 src="/files/FIBE.pdf"
+                title="FIBE Finance"
+              ></iframe>
             </AccordionBody>
           </Accordion>
 
@@ -416,10 +423,10 @@ const CompanyList = () => {
 
 
         </div>
-       </div>
-        <div>
+       
+        <div className="basis-1/3">
           {/* <h1>POLICY </h1> */}
-           <div className="md:p-3">
+          
          <div>
 
           <Accordion
@@ -777,10 +784,14 @@ const CompanyList = () => {
 
 
         </div>
-       </div>
+
+      
           
         </div>
+
+
       </div>
+     </div>
     </div>
   );
 };
