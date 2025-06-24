@@ -35,6 +35,8 @@ import Footer from "./Footer";
 import OurPartners from "./OurPartners";
 import Product from "./Product";
 import CustomerTestimonals from "./CustomerTestimonals";
+import LoanDistributor from "./LoanDistributor";
+import FAQ from "./FAQ";
 
 const navListMenuItems = [
   {
@@ -91,8 +93,8 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description }, key) => (
       <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg  p-2 text-white md:text-base md:font-semibold ">
+        <MenuItem className="flex items-center gap-3 rounded-lg ">
+          <div className="flex items-center justify-center rounded-lg  p-2 text-[#2583fd]  md:text-base md:font-semibold ">
             {React.createElement(icon, {
               strokeWidth: 2,
               className: "h-6 text-gray-900 w-6",
@@ -130,7 +132,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-white md:text-base md:font-semibold"
+              className="flex items-center gap-2 py-2 pr-4 font-medium text-[#2583fd] hover:bg-[#2583fd] hover:text-white md:text-base md:font-semibold"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -173,7 +175,27 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white md:text-base md:font-semibold">Home</ListItem>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-[#2583fd] hover:bg-[#2583fd] hover:text-white md:text-base md:font-semibold">Home</ListItem>
+      </Typography>
+
+      <Typography
+        as="a"
+        href="#"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-[#2583fd] hover:bg-[#2583fd] hover:text-white md:text-base md:font-semibold">Free Credit Score</ListItem>
+      </Typography>
+
+       <Typography
+        as="a"
+        href="#"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-[#2583fd] hover:bg-[#2583fd] hover:text-white md:text-base md:font-semibold">Product</ListItem>
       </Typography>
       <NavListMenu />
       <Typography
@@ -183,7 +205,7 @@ function NavList() {
         color="blue-gray"
         className="font-medium"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 text-white md:text-base md:font-semibold">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-[#2583fd] hover:bg-[#2583fd] hover:text-white md:text-base md:font-semibold">
           Contact Us
         </ListItem>
       </Typography>
@@ -204,7 +226,7 @@ const Header = () => {
   return (
   <div>
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 " id="navbar" >
-      <div className="flex items-center justify-between text-white">
+      <div className="flex items-center justify-between text-[#2583fd] ">
         <Typography
           as="a"
           href="#"
@@ -219,7 +241,7 @@ const Header = () => {
         <IconButton
           variant="text"
           color="white"
-          className="lg:hidden"
+          className="lg:hidden bg-[#2583fd] "
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
@@ -239,6 +261,8 @@ const Header = () => {
        <div>
         <Carousels />
         <Product />
+        <LoanDistributor/>
+        <FAQ />
         {/* <OurPartners /> */}
         <CustomerTestimonals/>
         <Footer />  
