@@ -37,6 +37,7 @@ import Product from "./Product";
 import CustomerTestimonals from "./CustomerTestimonals";
 import LoanDistributor from "./LoanDistributor";
 import FAQ from "./FAQ";
+import CheakCreditScore from "./CheakCreditScore";
 
 const navListMenuItems = [
   {
@@ -261,6 +262,7 @@ const Header = () => {
        <div>
         <Carousels />
         <Product />
+        <CheakCreditScore />
         <LoanDistributor/>
         <FAQ />
         {/* <OurPartners /> */}
