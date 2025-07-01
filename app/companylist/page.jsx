@@ -56,16 +56,16 @@ const CompanyList = () => {
             <ListItemPrefix>📊</ListItemPrefix> Dashboard
           </ListItem>
           <ListItem>
-            <ListItemPrefix>📈</ListItemPrefix> Analytics
+            <ListItemPrefix>📈</ListItemPrefix> Connector List
             <ListItemSuffix>
               <Chip value="5" size="sm" color="green" className="rounded-full" />
             </ListItemSuffix>
           </ListItem>
           <ListItem>
-            <ListItemPrefix>💰</ListItemPrefix> Sales
+            <ListItemPrefix>💰</ListItemPrefix> Bank Policy
           </ListItem>
           <ListItem>
-            <ListItemPrefix>👤</ListItemPrefix> Profile
+            <ListItemPrefix>👤</ListItemPrefix> Agreement Generator 
           </ListItem>
           <ListItem>
             <ListItemPrefix>⚙️</ListItemPrefix> Tables
