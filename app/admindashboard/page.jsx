@@ -66,7 +66,7 @@ const AdminDashboard = () => {
         open={open}
         onClose={toggleDrawer}
         overlay={!isDesktop}
-        className="w-65 p-4 overflow-y-auto"
+        className="w-62 p-4 overflow-y-auto"
         overlayProps={{
           className: "!bg-transparent !backdrop-blur-none",
         }}
